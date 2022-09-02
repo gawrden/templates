@@ -1,0 +1,301 @@
+/*
+   || HEART COLORS
+*/
+.h-hatred {
+  color: #373545;
+}
+
+.h-dislike {
+  color: #616478;
+}
+
+.h-neutral {
+  color: #c4a082;
+}
+
+.h-acq {
+  color: #887cd9;
+}
+
+.h-friend {
+  color: #7c9fd9;
+}
+
+.h-gf {
+  color: #5db365;
+}
+
+.h-besties {
+  color: #c4b152;
+}
+
+.h-love {
+  color: #e99554;
+}
+
+.h-forever {
+  color: #e8899e;
+}
+
+.h-married {
+  color: #dc3636;
+}
+
+/*
+|| TEMPLATE
+*/
+.lunastra-root {
+  --bgMain: #ebe4e0;
+  --bgDark: #a37b63;
+  --bgLight: #fbfbfb;
+  --text: #3d3c3c;
+}
+
+.lunastra {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  margin-top: 40px;
+  box-sizing: border-box;
+  background: var(--bgLight);
+  border: 1px solid var(--bgMain);
+  border-radius: 3px;
+  position: relative;
+  padding: 32px;
+  color: var(--text);
+  line-height: 1.5em;
+  font-size: 16px;
+  font-family: Ubuntu Mono, monospace;
+}
+.lunastra ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lunastra-upper {
+  display: flex;
+  gap: 20px;
+}
+
+.lunastra-hover {
+  position: relative;
+  flex: 0 1 200px;
+  max-width: 200px;
+}
+.lunastra-hover img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.tape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 0.67/1;
+}
+.tape:before, .tape:after {
+  content: "";
+  background-color: rgba(255, 255, 235, 0.6);
+  position: absolute;
+  display: block;
+  height: 30px;
+  width: 120px;
+  box-shadow: 0 0.5px 3px rgba(0, 0, 15, 0.45);
+  background-size: 60px auto;
+  opacity: 0.9;
+}
+.tape:before {
+  top: -8px;
+  left: -8px;
+  transform: rotate(-2deg);
+}
+.tape:after {
+  bottom: -8px;
+  right: -8px;
+  transform: rotate(-4deg);
+  width: 100px;
+}
+
+.lunastra-basics {
+  flex: 0 1 214px;
+}
+.lunastra-basics ul {
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.lunastra-basics li {
+  border-bottom: 1px dashed var(--bgDark);
+  padding-bottom: 2px;
+}
+.lunastra-basics li + li {
+  margin-top: 6px;
+}
+
+.lunastra-title {
+  position: relative;
+  background: #feff9c;
+  padding: 12px;
+  color: #111;
+  box-shadow: 0 1px 4px rgba(0, 0, 10, 0.3);
+  margin-right: -40px;
+  margin-top: -38px;
+}
+.lunastra-title h2,
+.lunastra-title h3 {
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.lunastra-title h2 {
+  font-size: 20px;
+}
+.lunastra-title h3 {
+  font-size: 12px;
+}
+
+.lunastra.main article {
+  border-radius: 4px;
+  line-height: 32px;
+  background-image: repeating-linear-gradient(white 0px, var(--bgLight) 31px, rgba(0, 0, 20, 0.6) 32px);
+  padding-top: 6px;
+}
+
+.lunastra hr {
+  border: 0;
+  border-top: 1px solid var(--bgMain);
+  margin: 20px -32px;
+}
+
+.lunastra-note {
+  background: #94f0f2;
+  padding: 8px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  margin-left: -40px;
+  border-left: 16px solid rgba(0, 0, 40, 0.2);
+}
+
+.lunastra-tab {
+  position: absolute;
+  height: 32px;
+  top: -32px;
+  width: 140px;
+  background: var(--bgDark);
+  text-align: left;
+  border-radius: 8px 8px 0 0;
+  line-height: 32px;
+  color: var(--bgLight);
+  padding: 0 8px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.lunastra content-warning {
+  display: block;
+  font-size: 12px;
+  font-family: Ubuntu Mono, monospace;
+  background: var(--bgMain);
+  padding: 4px 8px;
+  margin: -32px;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+
+/*
+|| DEV FACTS & WRITING
+*/
+.notes {
+  margin-top: 48px;
+}
+
+.notes .lunastra-wrapper {
+  font-family: heebo, sans-serif;
+  font-size: 14px;
+}
+.notes .lunastra-wrapper ul {
+  padding: 20px;
+  letter-spacing: 0;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.notes .lunastra-wrapper ul li + li {
+  margin-top: 12px;
+}
+
+/*
+ || CHARACTER RELATIONS
+*/
+.char-rel + .char-rel {
+  margin-top: 12px;
+}
+
+.hearts ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+.hearts li {
+  flex: 1 1 40%;
+}
+
+.char-rel span {
+  display: inline-block;
+  background: white;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.char-rel p {
+  font-size: 13px;
+  margin: 8px 0 0px 12px;
+}
+
+
+/*
+   || PHOTOSET
+*/
+.lunastra.photoset .lunastra-wrapper {
+  columns: 2 auto;
+  column-gap: 1rem;
+}
+.lunastra.photoset .lunastra-wrapper item {
+  display: inline-block;
+  width: 100%;
+}
+.lunastra.photoset .lunastra-wrapper item img {
+  width: 100%;
+  height: auto;
+}
+
+.lunastra.photo-multi .lunastra-wrapper {
+  margin: 0 -4px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.lunastra.photo-multi .lunastra-wrapper item {
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  margin: 0 4px;
+}
+.lunastra.photo-multi .lunastra-wrapper item img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  object-position: bottom;
+}
