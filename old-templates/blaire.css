@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Public+Sans:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+/* COLORS */
+#PaletteOne .fin {
+  --Background: #93817C;
+  --BackgroundRGBA: 135, 140, 154;
+}
+
+#PaletteOne .ongoing {
+  --Background: #dca8b6;
+  --BackgroundRGBA: 220, 168, 182;
+}
+
+#PaletteOne .archived {
+  --Background: #E57B74;
+}
+
+#PaletteOne .marley {
+  --CharAccent: #5E89CA;
+  --Unicode: "";
+}
+
+#PaletteOne .jay {
+  --CharAccent: #6AA994;
+  --Unicode: "";
+}
+
+.blaire {
+  width: 500px;
+  margin: 0 auto;
+  background: #333;
+  color: #555;
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  height: 500px;
+  border-radius: 20px;
+  border: 8px solid #222;
+  overflow: hidden;
+}
+.blaire a {
+  text-decoration: none;
+}
+.blaire header-filters {
+  display: block;
+  background: #333;
+  position: relative;
+  color: #fff;
+}
+.blaire header-filters .filters {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px;
+}
+.blaire header-filters ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.blaire header-filters li {
+  list-style-type: none;
+  text-align: center;
+}
+.blaire header-filters li a {
+  color: #eee;
+  font-weight: normal;
+  font-size: 14px;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  background: #494949;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 100px;
+}
+.blaire header-filters li a:hover {
+  color: #fff;
+  background: #222;
+}
+.blaire header-filters li i {
+  position: relative;
+  bottom: 2px;
+}
+.blaire header-filters ul b {
+  font-size: 10px;
+  margin: 20px 0 10px 0;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  background: #222;
+  border-radius: 10px;
+  padding: 2px 0;
+}
+.blaire header-filters ul:first-of-type b {
+  margin-top: 0;
+}
+.blaire .wrapper {
+  height: 500px;
+  box-sizing: border-box;
+  padding: 30px;
+  background: #fcfcfc;
+}
+.blaire .grid .item {
+  display: block;
+  padding: 12px;
+  background: var(--Background, #cdbfb8);
+  margin-bottom: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.blaire .selected {
+  color: #fff;
+  border-bottom-color: #97c5e0;
+  font-weight: bold;
+}
+.blaire h2 {
+  margin: 0;
+}
+.blaire .item a {
+  color: #222;
+  font-weight: 800;
+}
+.blaire .item h1,
+.blaire .item h2 {
+  margin: 0;
+}
+.blaire .item h1 {
+  font-size: 16px;
+}
+.blaire .item h2 {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: lowercase;
+  font-weight: 600;
+  font-style: italic;
+}
+.blaire .item a:hover {
+  font-style: italic;
+}
+.blaire item-name {
+  display: block;
+  font-size: 10px;
+  text-align: left;
+  margin-bottom: -28px;
+  height: 18px;
+  width: 18px;
+  font-size: 18px;
+  font-family: "cappuccicons";
+  background: #fff;
+  padding: 8px;
+  border-radius: 50px;
+  position: relative;
+  top: -18px;
+  left: -18px;
+}
+.blaire item-name:before {
+  content: "";
+  color: var(--CharAccent);
+}
+.blaire .marley item-name:before {
+  content: var(--Unicode);
+}
+.blaire .jay item-name:before {
+  content: var(--Unicode);
+}
+
+.blaire-wrapper {
+  display: grid;
+  grid-template-columns: 140px auto;
+  grid-template-rows: 500px;
+}
