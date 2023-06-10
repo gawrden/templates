@@ -1,0 +1,167 @@
+.filbert {
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  background: #fcfcfc;
+  width: 550px;
+  font-family: Poppins, sans-serif;
+  color: #555;
+}
+
+.filbert-wrapper {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  min-height: 500px;
+}
+
+.filbert-left {
+  position: relative;
+  text-align: center;
+  border-right: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 45px;
+  padding-right: 20px;
+  background: var(--FilGradient)
+}
+
+.filbert-left h1 {
+  font-family: montserrat alternates, sans-serif;
+  text-transform: lowercase;
+  color: #fff;
+  font-size:90px;
+  font-weight: 300;
+      writing-mode: vertical-rl;
+}
+
+.filbert-left h1 i {
+  font-size: 10px;
+  font-family: poppins, sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  word-spacing: 8px;
+  display: block;
+  color: #fff;
+
+}
+
+.filbert-left h1:first-letter {
+  font-weight: 700;
+  font-size: 98px;
+}
+
+.filbert-right {
+  padding: 20px;
+  padding-left: 70px;
+  height: 460px;
+  overflow: auto;
+}
+
+.filbert-right::-webkit-scrollbar {
+  width: 10px;
+  background: #fcfcfc;
+}
+
+.filbert-right::-webkit-scrollbar-thumb {
+background: var(--FilGradient);
+  border: 3px double #fcfcfc;
+}
+
+.filbert-right h1 {
+  font-family: montserrat alternates, sans-serif;
+  font-size:22px;
+  position: sticky;
+  top: -20px;
+  background: #fcfcfc;
+  font-weight: 400;
+  margin: 10px 0;
+  margin-left: 80px;
+  height: 40px;
+  line-height: 42px;
+  text-align: left;
+  padding-top: 5px;
+}
+
+.filbert-right h1:first-of-type {
+  margin-top: 0;
+}
+
+.filbert-right h1 span {
+  position: absolute;
+  left: -120px;
+  font-size: 32px;
+  color: var(--FilAccent);
+  background: #fcfcfc;
+  z-index: 3;
+  top: -2px;
+  padding: 5px;
+  height: 32px; width: 32px;
+}
+
+.filbert-right h1 i {
+    background: var(--FilGradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.filbert thread-wrap .ongoing {
+  order: 1;
+}
+
+.filbert thread-wrap .fin {
+  order: 2;
+}
+
+.filbert fil-thread {
+  font-size: 10px;
+  text-transform: uppercase;
+  line-height: 14px;
+  margin-left: 93px;
+  display: block;
+  margin-bottom: 12px;
+  padding-bottom: 0;
+}
+
+.filbert-right h2 {
+  display: block;
+  font-size: 14px;
+  letter-spacing: .5px;
+  color: #111;
+  text-transform: lowercase;
+  font-family: montserrat alternates, sans-serif;
+  margin: 0;
+  margin-left: 93px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.filbert fil-thread.fin a {
+  color: #999;
+}
+
+.filbert fil-thread a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--FilAccent);
+  display: block;
+  font-size: 12px;
+  text-transform: lowercase;
+}
+
+.filbert fil-thread i {
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  padding-left: 1px;
+  text-transform: lowercase;
+}
+
+.filbert {
+  --AccentBG: #fcfcfc;
+  --FilFont: #333;
+  --FilAccent: #6c5b7b;
+  --FilGradient: linear-gradient(45deg, #355c7d, #6c5b7b, #c06c84);
+}
